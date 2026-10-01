@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  food-rescue-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: food_rescue_ai
+    ports:
+      - "8000:8000"
+    environment:
+      - SECRET_KEY=food_rescue_super_secret_jwt_key_2026_antigravity
+      - DATABASE_URL=sqlite:///./food_rescue.db
+    restart: always
