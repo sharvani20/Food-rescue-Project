@@ -1,0 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.db
+venv/
+.venv/
+node_modules/
+frontend/dist/
+frontend/node_modules/
+.DS_Store
